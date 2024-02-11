@@ -1,16 +1,11 @@
 .card {
   position: relative;
   width: 350px;
-  //height: 190px;
-  height: 450px;
+  height: 190px;
   background: #eee9e9;
   border-radius: 20px;
   box-shadow: 0 35px 80px rgb(0, 0, 0, 15);
   transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
 }
 .card:hover {
   height: 450px;
@@ -23,22 +18,10 @@
   width: 150px;
   height: 150px;
   background: #eee9e9;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
   border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
   box-shadow: 0 15px 50px rgb(0, 0, 0, 0.35);
   overflow: hidden;
   transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
 }
 .card:hover .imgBx {
   width: 250px;
@@ -59,17 +42,22 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  overflow: hidden;
 }
 .card .content .details {
-  padding: 40px;
+  padding-top: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+
   text-align: center;
   width: 100%;
   transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
+  transform: translateY(150px);
 }
+.card:hover .content .details {
+  transform: translateY(0px);
+}
+
 .card .content .details h2 span {
   font-size: 0.75em;
   font-weight: 500;
@@ -94,9 +82,10 @@
 .card .content .details .action-btn {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 10px;
 }
 .card .content .details .action-btn button {
-  padding: 10px 30px;
+  padding: 10px 35px;
   border-radius: 5px;
   border: none;
   outline: none;
@@ -105,12 +94,9 @@
   background: #ff5f95;
   color: white;
   cursor: pointer;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
 }
 .card .content .details .action-btn button:nth-child(2) {
   border: 1px solid #999;
   color: #999;
+  background: #fff;
 }
