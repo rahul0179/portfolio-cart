@@ -68,7 +68,7 @@
   justify-content: space-between;
   margin: 20px 0;
 }
- {
+.card .content .details .data h3 {
   font-size: 1em;
   color: #555;
   line-height: 1.2em;
@@ -82,7 +82,7 @@
 .card .content .details .action-btn {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 10px;
+  padding-bottom: 28px;
 }
 .card .content .details .action-btn button {
   padding: 10px 35px;
